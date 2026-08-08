@@ -146,6 +146,20 @@ document.querySelectorAll('.checklist').forEach(list => {
     });
   });
   updateProgress();
+
+  const progressEl = document.querySelector(`.checklist-progress[data-for="${id}"]`);
+  if (progressEl && !progressEl.querySelector('.reset-btn')) {
+    const resetBtn = document.createElement('button');
+    resetBtn.type = 'button';
+    resetBtn.className = 'reset-btn';
+    resetBtn.textContent = 'Reset';
+    resetBtn.addEventListener('click', () => {
+      boxes.forEach(b => { b.checked = false; });
+      localStorage.removeItem(`kraymer-checklist-${id}`);
+      updateProgress();
+    });
+    progressEl.appendChild(resetBtn);
+  }
 });
 
 /* ===== Accordions ===== */

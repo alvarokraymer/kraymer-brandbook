@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formats & Layouts — Kraymer Brand Book</title>
+<meta name="description" content="Aspect ratios, safe zones, logo lockups and layout variations for every platform — Kraymer Art.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:,">
+</head>
+<body>
+
+<button class="mobile-toggle" id="navToggle" aria-label="Open navigation">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+</button>
+
+<div class="shell">
+  <aside class="sidebar" id="sidebar">
+    <div>
+      <a href="index.html" class="subpage-back">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        Brand Book
+      </a>
+      <div class="sidebar-top" style="margin-top:14px;">
+        <span class="display" style="font-size:22px;">Layout Studio</span>
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="moon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <button class="search-trigger" id="searchTrigger">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      Search formats
+      <kbd>⌘K</kbd>
+    </button>
+
+    <nav class="toc" id="toc">
+      <div class="toc-pill" id="tocPill"></div>
+      <div class="group">
+        <span class="group-label">Ratios</span>
+        <a href="#fmt-overview">Overview</a>
+        <a href="#fmt-ratios">Aspect ratio library</a>
+        <a href="#fmt-safezones">Platform safe zones</a>
+      </div>
+      <div class="group">
+        <span class="group-label">Logo in layout</span>
+        <a href="#fmt-lockups">Lockup mockups</a>
+      </div>
+      <div class="group">
+        <span class="group-label">Layout variations</span>
+        <a href="#fmt-variants-45">4:5 — feed</a>
+        <a href="#fmt-variants-916">9:16 — story/reel</a>
+        <a href="#fmt-variants-11">1:1 — square</a>
+      </div>
+      <div class="group">
+        <span class="group-label">Print</span>
+        <a href="#fmt-print">Print formats</a>
+      </div>
+    </nav>
+
+    <div class="sidebar-foot">Rule of thumb: design for the native format first. Never crop an existing asset to fit a new one.</div>
+  </aside>
+
+  <main class="content" id="top">
+
+    <section class="block hero" id="fmt-overview">
+      <div class="grain"></div>
+      <span class="hero-portal-badge">Layout Studio</span>
+      <h1>One frame,<br>every platform.</h1>
+      <p class="lead">Every aspect ratio Kraymer Art ships in, the safe zones that protect the product from platform UI, and logo lockup positions for each — plus a few layout starting points so no one begins from a blank canvas.</p>
+      <p class="lead" style="font-size:14px;color:var(--text-muted);">As with everything else in this book: these are starting points, not a cage. Break them with a reason.</p>
+    </section>
+
+    <section class="block" id="fmt-ratios">
+      <div class="eyebrow"><span class="tag">Ratios</span></div>
+      <h2 class="block-title">Aspect ratio library</h2>
+      <p class="block-dek">The formats Kraymer Art ships in most often, roughly to scale.</p>
+      <div class="ratio-grid">
+        <div class="ratio-card">
+          <div class="ratio-box" style="aspect-ratio:1/1;">1:1</div>
+          <div class="r-name">Square — 1:1</div>
+          <div class="r-use">Feed (legacy), profile grid, Pinterest square, avatars</div>
+        </div>
+        <div class="ratio-card">
+          <div class="ratio-box" style="aspect-ratio:4/5;">4:5</div>
+          <div class="r-name">Portrait — 4:5</div>
+          <div class="r-use">Instagram / Facebook feed default — max screen real estate</div>
+        </div>
+        <div class="ratio-card">
+          <div class="ratio-box" style="aspect-ratio:9/16;">9:16</div>
+          <div class="r-name">Vertical — 9:16</div>
+          <div class="r-use">Stories, Reels, TikTok, YouTube Shorts</div>
+        </div>
+        <div class="ratio-card">
+          <div class="ratio-box" style="aspect-ratio:16/9;">16:9</div>
+          <div class="r-name">Widescreen — 16:9</div>
+          <div class="r-use">YouTube video/thumbnail, website hero, presentation slides</div>
+        </div>
+        <div class="ratio-card">
+          <div class="ratio-box" style="aspect-ratio:3/4;">3:4</div>
+          <div class="r-name">Tall — 3:4</div>
+          <div class="r-use">Pinterest standard pin, lookbook spreads</div>
+        </div>
+        <div class="ratio-card">
+          <div class="ratio-box" style="aspect-ratio:2/3;">2:3</div>
+          <div class="r-name">Poster — 2:3</div>
+          <div class="r-use">Pinterest tall pin, print poster, product hero crops</div>
+        </div>
+        <div class="ratio-card">
+          <div class="ratio-box" style="aspect-ratio:21/9;">21:9</div>
+          <div class="r-name">Cinematic — 21:9</div>
+          <div class="r-use">Ultra-wide website banners, campaign key visuals</div>
+        </div>
+        <div class="ratio-card">
+          <div class="ratio-box" style="aspect-ratio:210/297;">A4</div>
+          <div class="r-name">Print — A4 / Letter</div>
+          <div class="r-use">Lookbooks, PDFs, Collection World documents, press kits</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="fmt-safezones">
+      <div class="eyebrow"><span class="tag">Ratios</span></div>
+      <h2 class="block-title">Platform safe zones</h2>
+      <p class="block-dek">Platform UI sits on top of the image. Keep the product and any text out of these zones — the striped bands below are approximate reserved areas, not exact platform specs (they change; check before a major campaign).</p>
+      <div class="grid-3">
+        <div>
+          <div class="ratio-box" style="aspect-ratio:9/16; max-height:280px;">
+            <div class="safe-zone" style="top:0; height:14%;">Profile / header UI</div>
+            <div class="safe-zone" style="bottom:0; height:18%;">Caption / reply bar / CTA sticker</div>
+          </div>
+          <p class="mock-caption">Story / Reel — 9:16</p>
+        </div>
+        <div>
+          <div class="ratio-box" style="aspect-ratio:4/5; max-height:280px;">
+            <div class="safe-zone" style="top:0; height:6%;"></div>
+            <div class="safe-zone" style="bottom:0; height:6%;"></div>
+          </div>
+          <p class="mock-caption">Feed — 4:5, ~6% crop-safe margin (crops to 1:1 on profile grid)</p>
+        </div>
+        <div>
+          <div class="ratio-box" style="aspect-ratio:16/9; max-height:280px;">
+            <div class="safe-zone" style="bottom:0; right:0; left:auto; width:22%; height:16%; border-left:1px dashed rgba(200,70,70,.55);">Duration badge</div>
+          </div>
+          <p class="mock-caption">YouTube thumbnail — 16:9, bottom-right reserved</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="fmt-lockups">
+      <div class="eyebrow"><span class="tag">Logo in layout</span></div>
+      <h2 class="block-title">Lockup mockups</h2>
+      <p class="block-dek">The wordmark stays small and quiet — it should never compete with the product. These are the default positions per format.</p>
+      <div class="grid-3">
+        <div>
+          <div class="mock-frame" style="aspect-ratio:4/5; background:linear-gradient(155deg, var(--c-accent-1), var(--c-black));">
+            <img class="logo-on-dark" src="assets/logo/kraymer-logo.svg" alt="Logo on feed post" style="position:absolute; bottom:6%; left:6%; width:22%;">
+          </div>
+          <p class="mock-caption">Feed post (4:5) — bottom-left, small</p>
+        </div>
+        <div>
+          <div class="mock-frame" style="aspect-ratio:9/16; background:linear-gradient(155deg, #241a33, var(--c-black));">
+            <div class="safe-zone" style="bottom:0; height:18%;"></div>
+            <img class="logo-on-dark" src="assets/logo/kraymer-logo.svg" alt="Logo on story" style="position:absolute; bottom:22%; left:50%; transform:translateX(-50%); width:26%;">
+          </div>
+          <p class="mock-caption">Story / Reel (9:16) — bottom-center, above the reserved zone</p>
+        </div>
+        <div>
+          <div class="mock-frame" style="aspect-ratio:16/9; background:var(--c-paper); border:1px solid var(--border);">
+            <img src="assets/logo/kraymer-logo.svg" alt="Logo on website header" style="position:absolute; top:8%; left:5%; width:20%;">
+          </div>
+          <p class="mock-caption">Website header (16:9) — top-left, standard nav position</p>
+        </div>
+        <div>
+          <div class="mock-frame" style="aspect-ratio:7/4; background:var(--c-paper); border:1px solid var(--border); display:flex; align-items:center; justify-content:center;">
+            <img src="assets/logo/kraymer-logo.svg" alt="Logo centered on business card" style="width:46%;">
+          </div>
+          <p class="mock-caption">Business card — centered, generous clear space</p>
+        </div>
+        <div>
+          <div class="mock-frame" style="aspect-ratio:1/1; background:var(--c-paper); border:1px solid var(--border); display:flex; align-items:center; justify-content:center;">
+            <img src="assets/logo/kraymer-logo.svg" alt="Logo on product tag" style="width:60%;">
+          </div>
+          <p class="mock-caption">Product tag — centered, single element on the card</p>
+        </div>
+        <div>
+          <div class="mock-frame" style="aspect-ratio:1/1; background:linear-gradient(155deg, #1a2e2e, var(--c-black));">
+            <img class="logo-on-dark" src="assets/logo/kraymer-logo.svg" alt="Logo on square post" style="position:absolute; top:6%; right:6%; width:20%;">
+          </div>
+          <p class="mock-caption">Square post (1:1) — top-right, out of the product's way</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="fmt-variants-45">
+      <div class="eyebrow"><span class="tag">Layout variations</span></div>
+      <h2 class="block-title">4:5 — feed post</h2>
+      <p class="block-dek">Three starting compositions for the default feed format. Pick based on how much the moment needs to say.</p>
+      <div class="grid-3">
+        <div>
+          <div class="mock-frame" style="aspect-ratio:4/5;">
+            <div class="m-img" style="top:8%; left:8%; right:8%; bottom:20%; background:linear-gradient(160deg, var(--c-accent-1), var(--c-black));"></div>
+            <div class="m-text" style="bottom:8%; left:8%; width:40%; height:6%;"></div>
+          </div>
+          <p class="mock-caption">Product centered, framed, caption below</p>
+        </div>
+        <div>
+          <div class="mock-frame" style="aspect-ratio:4/5;">
+            <div class="m-img" style="top:0; left:0; width:55%; bottom:0; background:linear-gradient(160deg, var(--c-accent-2), var(--c-black));"></div>
+            <div class="m-text" style="top:42%; left:62%; width:30%; height:7%;"></div>
+            <div class="m-text" style="top:54%; left:62%; width:22%; height:5%;"></div>
+          </div>
+          <p class="mock-caption">Product left, headline right</p>
+        </div>
+        <div>
+          <div class="mock-frame" style="aspect-ratio:4/5;">
+            <div class="m-img" style="top:0; left:0; right:0; bottom:0; background:linear-gradient(160deg, var(--c-accent-3), var(--c-black));"></div>
+            <div class="m-text" style="bottom:6%; left:6%; width:55%; height:9%;"></div>
+          </div>
+          <p class="mock-caption">Full-bleed image, caption bar overlay</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="fmt-variants-916">
+      <div class="eyebrow"><span class="tag">Layout variations</span></div>
+      <h2 class="block-title">9:16 — story / reel</h2>
+      <p class="block-dek">Vertical formats need the message resolved before the thumb moves. Two dependable starting points.</p>
+      <div class="grid-2">
+        <div>
+          <div class="mock-frame" style="aspect-ratio:9/16; max-height:420px;">
+            <div class="m-img" style="top:0; left:0; right:0; bottom:22%; background:linear-gradient(160deg, var(--c-accent-1), var(--c-black));"></div>
+            <div class="m-text" style="bottom:9%; left:10%; width:50%; height:5%;"></div>
+            <div class="safe-zone" style="bottom:0; height:16%;"></div>
+          </div>
+          <p class="mock-caption">Vertical hero image, CTA above the reserved zone</p>
+        </div>
+        <div>
+          <div class="mock-frame" style="aspect-ratio:9/16; max-height:420px;">
+            <div class="m-img" style="top:0; left:0; right:0; height:52%; background:linear-gradient(160deg, var(--c-accent-2), var(--c-black));"></div>
+            <div class="m-text" style="top:58%; left:10%; width:45%; height:6%;"></div>
+            <div class="m-text" style="top:68%; left:10%; width:30%; height:4%;"></div>
+          </div>
+          <p class="mock-caption">Split screen — image top, message below</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="fmt-variants-11">
+      <div class="eyebrow"><span class="tag">Layout variations</span></div>
+      <h2 class="block-title">1:1 — square</h2>
+      <p class="block-dek">Used sparingly per the brand rules — mainly grid tiles and legacy placements.</p>
+      <div class="grid-2">
+        <div>
+          <div class="mock-frame" style="aspect-ratio:1/1;">
+            <div class="m-img" style="top:0; left:0; right:0; bottom:0; background:linear-gradient(160deg, var(--c-accent-3), var(--c-black));"></div>
+          </div>
+          <p class="mock-caption">Grid tile — full-bleed, no text, part of a 3-wide set</p>
+        </div>
+        <div>
+          <div class="mock-frame" style="aspect-ratio:1/1;">
+            <div class="m-img" style="top:14%; left:14%; right:14%; bottom:26%; background:linear-gradient(160deg, var(--c-accent-1), var(--c-black));"></div>
+            <div class="m-text" style="bottom:10%; left:14%; width:40%; height:6%;"></div>
+          </div>
+          <p class="mock-caption">Centered product, inset with breathing room, caption below</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="fmt-print">
+      <div class="eyebrow"><span class="tag">Print</span></div>
+      <h2 class="block-title">Print formats</h2>
+      <p class="block-dek">For lookbooks, press kits and packaging inserts — margins are more generous than digital since there's no platform crop to worry about, only the trim.</p>
+      <div class="grid-3">
+        <div class="card"><h3>A4 / Letter</h3><p>20mm margins minimum, 3mm bleed if edge-to-edge colour is used. Collection World documents and press kits.</p></div>
+        <div class="card"><h3>Business card</h3><p>85×55mm, 3mm safe margin from trim on every side. Logo centered, nothing closer than the clear-space rule.</p></div>
+        <div class="card"><h3>Packaging insert</h3><p>Match the box's die-line exactly — never scale a digital layout down and hope it fits.</p></div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<div class="cmdk-overlay" id="cmdk">
+  <div class="cmdk-panel">
+    <div class="cmdk-input-row">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="text" id="cmdkInput" placeholder="Search…" autocomplete="off">
+      <kbd>Esc</kbd>
+    </div>
+    <div class="cmdk-results" id="cmdkResults"></div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
