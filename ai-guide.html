@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Studio — Kraymer Brand Book</title>
+<meta name="description" content="AI product imagery production and QA guide — Kraymer Art.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:,">
+</head>
+<body>
+
+<button class="mobile-toggle" id="navToggle" aria-label="Open navigation">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+</button>
+
+<div class="shell">
+  <aside class="sidebar" id="sidebar">
+    <div>
+      <a href="index.html" class="subpage-back">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        Brand Book
+      </a>
+      <div class="sidebar-top" style="margin-top:14px;">
+        <span class="display" style="font-size:22px;">AI Studio</span>
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="moon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <button class="search-trigger" id="searchTrigger">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      Search this guide
+      <kbd>⌘K</kbd>
+    </button>
+
+    <nav class="toc" id="toc">
+      <div class="toc-pill" id="tocPill"></div>
+      <div class="group">
+        <span class="group-label">Non-negotiables</span>
+        <a href="#ai-overview">Overview</a>
+        <a href="#ai-reference">Required references</a>
+      </div>
+      <div class="group">
+        <span class="group-label">Prompting</span>
+        <a href="#ai-prompting">Prompting system</a>
+        <a href="#ai-builder">Prompt builder</a>
+      </div>
+      <div class="group">
+        <span class="group-label">Production</span>
+        <a href="#ai-workflow">Workflow</a>
+      </div>
+      <div class="group">
+        <span class="group-label">Quality</span>
+        <a href="#ai-severity">Error severity</a>
+        <a href="#ai-qa">Full QA checklist</a>
+      </div>
+    </nav>
+
+    <div class="sidebar-foot">AI Product Imagery — Production &amp; QA Guide.<br>Applies to catalogue, hero, campaign and social imagery.</div>
+  </aside>
+
+  <main class="content" id="top">
+
+    <section class="block hero" id="ai-overview">
+      <div class="grain"></div>
+      <span class="hero-portal-badge">AI Studio</span>
+      <h1>The image can change.<br>The product cannot.</h1>
+      <p class="lead">A shared production and quality-control process for AI-assisted product imagery — the full e-commerce catalogue, collection heroes, campaign imagery, advertising assets, social content and product-led motion.</p>
+      <p class="lead" style="font-size:14px;color:var(--text-muted);">The objective is not simply to produce visually convincing images. Every final asset must represent the original jewellery accurately, follow the approved visual direction and remain consistent with the wider brand system. AI output is production material requiring comparison, correction and approval — never a final decision on its own.</p>
+
+      <h3 class="sub-title" style="margin-top:40px;"><span class="tag">Every approved asset must preserve</span></h3>
+      <div class="checklist-progress" data-for="ai-preserve"><div class="bar"><div class="fill"></div></div><span class="label">0/7</span></div>
+      <ul class="checklist" data-checklist="ai-preserve">
+        <li><label><input type="checkbox"><span>Product silhouette and proportions</span></label></li>
+        <li><label><input type="checkbox"><span>True product scale</span></label></li>
+        <li><label><input type="checkbox"><span>Component count and construction</span></label></li>
+        <li><label><input type="checkbox"><span>Gemstone count, placement and colour</span></label></li>
+        <li><label><input type="checkbox"><span>Metal, finish and surface texture</span></label></li>
+        <li><label><input type="checkbox"><span>Engravings and distinctive details</span></label></li>
+        <li><label><input type="checkbox"><span>Chain, clasp and connector structure</span></label></li>
+      </ul>
+    </section>
+
+    <section class="block" id="ai-reference">
+      <div class="eyebrow"><span class="tag">Non-negotiables</span></div>
+      <h2 class="block-title">Required source material</h2>
+      <p class="block-dek">Before generating an image, gather all available product information. Production should not begin when a critical part of the product cannot be understood from the available references.</p>
+      <div class="checklist-progress" data-for="ai-refs"><div class="bar"><div class="fill"></div></div><span class="label">0/9</span></div>
+      <ul class="checklist" data-checklist="ai-refs">
+        <li><label><input type="checkbox"><span>Clear front image</span></label></li>
+        <li><label><input type="checkbox"><span>Three-quarter view</span></label></li>
+        <li><label><input type="checkbox"><span>Side or rear view where relevant</span></label></li>
+        <li><label><input type="checkbox"><span>Close-up of the most complex detail</span></label></li>
+        <li><label><input type="checkbox"><span>Product sketch or technical drawing</span></label></li>
+        <li><label><input type="checkbox"><span>Metal and stone variant references</span></label></li>
+        <li><label><input type="checkbox"><span>Dimensions or true product measurements</span></label></li>
+        <li><label><input type="checkbox"><span>Existing model or scale reference</span></label></li>
+        <li><label><input type="checkbox"><span>Information about clasps, chains and adjustable components</span></label></li>
+      </ul>
+    </section>
+
+    <section class="block" id="ai-prompting">
+      <div class="eyebrow"><span class="tag">Prompting</span></div>
+      <h2 class="block-title">Prompting system</h2>
+      <p class="block-dek">The references define the product. The prompt defines how it is presented. A production prompt should be structured, measurable and easy to revise.</p>
+      <div class="grid-2">
+        <div class="card"><h3>Be specific</h3><p>"Seven round-cut red stones" is more useful than "several red gemstones."</p></div>
+        <div class="card"><h3>Avoid contradictions</h3><p>Do not request an extremely shallow depth of field while requiring the entire piece to remain sharp.</p></div>
+        <div class="card"><h3>Correct one variable at a time</h3><p>Geometry, materials, lighting, background and composition should be refined separately.</p></div>
+        <div class="card"><h3>Repeat critical constraints</h3><p>Repetition is useful when it protects the product, but useless if not.</p></div>
+        <div class="card"><h3>Don't solve everything in one generation</h3><p>Lock the jewellery first. Build the scene around it afterwards.</p></div>
+        <div class="card"><h3>AI is a great prompter</h3><p>Use any LLM to generate the prompt. Make sure you say what model you are generating on.</p></div>
+      </div>
+    </section>
+
+    <section class="block" id="ai-builder">
+      <div class="eyebrow"><span class="tag">Prompting</span></div>
+      <h2 class="block-title">Prompt builder</h2>
+      <p class="block-dek">Fill in the eight fields below — every field maps to one non-negotiable part of the prompt. Edit freely; the assembled prompt updates live on the right.</p>
+
+      <div class="builder-grid prompt-builder">
+        <div>
+          <div class="builder-field">
+            <div class="bf-head"><span class="bf-num">01</span><span class="bf-title">Product Identity</span></div>
+            <div class="bf-hint">State exactly what is being represented.</div>
+            <textarea data-label="Product Identity">A handcrafted sterling silver pendant based strictly on the supplied product references.</textarea>
+          </div>
+          <div class="builder-field">
+            <div class="bf-head"><span class="bf-num">02</span><span class="bf-title">Product Details</span></div>
+            <div class="bf-hint">Describe only the details that must be preserved.</div>
+            <textarea data-label="Product Details">Preserve the original silhouette, thickness, engraving, connector placement, chain construction and the exact number and position of gemstones.</textarea>
+          </div>
+          <div class="builder-field">
+            <div class="bf-head"><span class="bf-num">03</span><span class="bf-title">View and Orientation</span></div>
+            <div class="bf-hint">Define the camera angle and relationship.</div>
+            <textarea data-label="View and Orientation">Three-quarter front view, slightly elevated camera, showing the front face and product depth.</textarea>
+          </div>
+          <div class="builder-field">
+            <div class="bf-head"><span class="bf-num">04</span><span class="bf-title">Material Behaviour</span></div>
+            <div class="bf-hint">Describe physical properties rather than generic adjectives.</div>
+            <textarea data-label="Material Behaviour">Polished sterling silver with controlled reflections, slightly darker oxidised recesses and realistic micro-surface variation.</textarea>
+          </div>
+          <div class="builder-field">
+            <div class="bf-head"><span class="bf-num">05</span><span class="bf-title">Lighting</span></div>
+            <div class="bf-hint">Define direction, softness and contrast.</div>
+            <textarea data-label="Lighting">Large soft directional source from the upper left, even fill from the front and restrained edge definition.</textarea>
+          </div>
+          <div class="builder-field">
+            <div class="bf-head"><span class="bf-num">06</span><span class="bf-title">Background and Contact</span></div>
+            <div class="bf-hint">Define the required background and how the piece sits within it.</div>
+            <textarea data-label="Background and Contact">Uniform #F6F6F6 background, no visible horizon, subtle natural contact shadow directly beneath the product.</textarea>
+          </div>
+          <div class="builder-field">
+            <div class="bf-head"><span class="bf-num">07</span><span class="bf-title">Lens and Focus</span></div>
+            <div class="bf-hint">Define the photographic behaviour.</div>
+            <textarea data-label="Lens and Focus">Product photography, moderate depth of field, entire jewellery piece in sharp focus, no artificial bokeh.</textarea>
+          </div>
+          <div class="builder-field">
+            <div class="bf-head"><span class="bf-num">08</span><span class="bf-title">Output Constraints</span></div>
+            <div class="bf-hint">State what must not happen.</div>
+            <textarea data-label="Output Constraints">Do not add, remove, reshape or reinterpret any jewellery component. No extra gemstones, no fused links, no altered engravings, no decorative props and no text.</textarea>
+          </div>
+        </div>
+
+        <div class="prompt-output">
+          <div class="po-label"><span>Assembled prompt</span><span style="display:flex;gap:12px;"><button class="reset-btn prompt-reset" type="button">Reset</button><button class="reset-btn prompt-copy" type="button">Copy</button></span></div>
+          <pre></pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="ai-workflow">
+      <div class="eyebrow"><span class="tag">Production</span></div>
+      <h2 class="block-title">Product photography workflow</h2>
+      <p class="block-dek">A structured workflow separates product reconstruction from visual styling. Each stage moves from reference analysis and product accuracy to lighting, composition, refinement and final approval.</p>
+
+      <div class="accordion open">
+        <button class="accordion-head"><span>01 — Intake</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="accordion-body"><div><div class="inner">
+          <p>Confirm what's being produced before anything is generated.</p>
+          <div class="checklist-progress" data-for="ai-intake"><div class="bar"><div class="fill"></div></div><span class="label">0/6</span></div>
+          <ul class="checklist" data-checklist="ai-intake">
+            <li><label><input type="checkbox"><span>Correct SKU and variant</span></label></li>
+            <li><label><input type="checkbox"><span>Available references</span></label></li>
+            <li><label><input type="checkbox"><span>Official dimensions</span></label></li>
+            <li><label><input type="checkbox"><span>Gallery image requirements</span></label></li>
+            <li><label><input type="checkbox"><span>Missing product information flagged</span></label></li>
+            <li><label><input type="checkbox"><span>Non-negotiable details identified</span></label></li>
+          </ul>
+        </div></div></div>
+      </div>
+
+      <div class="accordion">
+        <button class="accordion-head"><span>02 — Product Lock</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="accordion-body"><div><div class="inner">
+          <p>Create the most accurate neutral representation of the jewellery before introducing models, expressive environments or campaign lighting. Once approved, it becomes the base for the full image set.</p>
+          <div class="checklist-progress" data-for="ai-lock"><div class="bar"><div class="fill"></div></div><span class="label">0/7</span></div>
+          <ul class="checklist" data-checklist="ai-lock">
+            <li><label><input type="checkbox"><span>Correct geometry</span></label></li>
+            <li><label><input type="checkbox"><span>Correct materials</span></label></li>
+            <li><label><input type="checkbox"><span>Correct gemstones</span></label></li>
+            <li><label><input type="checkbox"><span>Correct engravings</span></label></li>
+            <li><label><input type="checkbox"><span>Correct chain and clasp</span></label></li>
+            <li><label><input type="checkbox"><span>Correct construction</span></label></li>
+            <li><label><input type="checkbox"><span>Correct scale</span></label></li>
+          </ul>
+        </div></div></div>
+      </div>
+
+      <div class="accordion">
+        <button class="accordion-head"><span>03 — Generate</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="accordion-body"><div><div class="inner">
+          <p>Neutral views should be approved before producing the more complex scale and model assets. Recommended production order — check off as each is produced:</p>
+          <div class="checklist-progress" data-for="ai-generate"><div class="bar"><div class="fill"></div></div><span class="label">0/7</span></div>
+          <ul class="checklist" data-checklist="ai-generate">
+            <li><label><input type="checkbox"><span>Front view</span></label></li>
+            <li><label><input type="checkbox"><span>Three-quarter hero view</span></label></li>
+            <li><label><input type="checkbox"><span>Alternate metal</span></label></li>
+            <li><label><input type="checkbox"><span>Detail or function</span></label></li>
+            <li><label><input type="checkbox"><span>Scale</span></label></li>
+            <li><label><input type="checkbox"><span>Model A</span></label></li>
+            <li><label><input type="checkbox"><span>Model B</span></label></li>
+          </ul>
+        </div></div></div>
+      </div>
+
+      <div class="accordion">
+        <button class="accordion-head"><span>04 — Refine</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="accordion-body"><div><div class="inner">
+          <p>Do not discard a correct product because one secondary element failed. Correct isolated failures without unnecessarily regenerating the entire image. Use local correction for:</p>
+          <div class="checklist-progress" data-for="ai-refine"><div class="bar"><div class="fill"></div></div><span class="label">0/7</span></div>
+          <ul class="checklist" data-checklist="ai-refine">
+            <li><label><input type="checkbox"><span>Individual gemstones</span></label></li>
+            <li><label><input type="checkbox"><span>Chain sections</span></label></li>
+            <li><label><input type="checkbox"><span>Engravings</span></label></li>
+            <li><label><input type="checkbox"><span>Metal reflections</span></label></li>
+            <li><label><input type="checkbox"><span>Background inconsistencies</span></label></li>
+            <li><label><input type="checkbox"><span>Contact and shadows</span></label></li>
+            <li><label><input type="checkbox"><span>Edge artefacts</span></label></li>
+          </ul>
+        </div></div></div>
+      </div>
+
+      <div class="accordion">
+        <button class="accordion-head"><span>05 — Review</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="accordion-body"><div><div class="inner">
+          <p><strong>Never approve from memory.</strong> Compare the final image directly with:</p>
+          <div class="checklist-progress" data-for="ai-review"><div class="bar"><div class="fill"></div></div><span class="label">0/5</span></div>
+          <ul class="checklist" data-checklist="ai-review">
+            <li><label><input type="checkbox"><span>Primary source reference</span></label></li>
+            <li><label><input type="checkbox"><span>Secondary detail references</span></label></li>
+            <li><label><input type="checkbox"><span>Product Record</span></label></li>
+            <li><label><input type="checkbox"><span>Approved Product Lock</span></label></li>
+            <li><label><input type="checkbox"><span>Other images in the same gallery</span></label></li>
+          </ul>
+        </div></div></div>
+      </div>
+    </section>
+
+    <section class="block" id="ai-severity">
+      <div class="eyebrow"><span class="tag">Quality</span></div>
+      <h2 class="block-title">Error severity</h2>
+      <p class="block-dek">Not every issue has the same impact. This system distinguishes between errors that misrepresent the product, issues that must be corrected before approval and minor imperfections that do not affect accuracy.</p>
+      <div class="severity-grid">
+        <div class="severity-col crit">
+          <div class="severity-head"><div class="s-title">Critical</div><div class="s-action">Reject or rebuild</div><div class="s-desc">Errors that misrepresent the product.</div></div>
+          <ul class="severity-list">
+            <li>Wrong product or variant</li><li>Altered silhouette or proportions</li><li>Missing or added components</li><li>Incorrect gemstone count</li><li>Wrong metal</li><li>Incorrect chain or clasp</li><li>Incorrect engraving</li><li>False scale</li><li>Major geometry failure</li>
+          </ul>
+        </div>
+        <div class="severity-col major">
+          <div class="severity-head"><div class="s-title">Major</div><div class="s-action">Correct before approval</div><div class="s-desc">Errors that compromise physical credibility or catalogue consistency.</div></div>
+          <ul class="severity-list">
+            <li>Incorrect background</li><li>Inaccurate roughness or finish</li><li>Wrong gemstone colour or setting</li><li>Broken or fused links</li><li>Floating product</li><li>Incorrect contact</li><li>Contradictory lighting</li><li>Unnatural reflections</li><li>Visible AI artefact</li><li>Incorrect model interaction</li>
+          </ul>
+        </div>
+        <div class="severity-col minor">
+          <div class="severity-head"><div class="s-title">Minor</div><div class="s-action">Correct where practical</div><div class="s-desc">Small cosmetic issues that do not alter the product.</div></div>
+          <ul class="severity-list">
+            <li>Slight background variation</li><li>Small edge halo</li><li>Minor reflection inconsistency</li><li>Local sharpness mismatch</li><li>Isolated artefact outside the jewellery</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="ai-qa">
+      <div class="eyebrow"><span class="tag">Quality</span></div>
+      <h2 class="block-title">Full QA checklist</h2>
+      <p class="block-dek">Every final asset must be inspected directly against the original references before delivery. Run this checklist per asset — it covers product accuracy, materials, lighting, background, scale, artefacts and technical requirements. 71 checks across 10 categories.</p>
+
+      <div class="checklist-progress" data-master="ai-qa" style="margin-bottom:30px;"><div class="bar"><div class="fill"></div></div><span class="label">0/71</span></div>
+      <p style="margin-top:-20px; margin-bottom:30px;"><button class="reset-btn" data-reset="qa-">Reset entire QA checklist</button></p>
+
+      <h3 class="sub-title"><span class="tag">Product identification</span></h3>
+      <ul class="checklist" data-checklist="qa-1" data-qa-group="ai-qa">
+        <li><label><input type="checkbox"><span>Correct product and SKU</span></label></li>
+        <li><label><input type="checkbox"><span>Correct version and metal variant</span></label></li>
+        <li><label><input type="checkbox"><span>Correct image type and gallery position</span></label></li>
+        <li><label><input type="checkbox"><span>Compared directly with the primary source</span></label></li>
+        <li><label><input type="checkbox"><span>Compared with relevant secondary references</span></label></li>
+      </ul>
+
+      <h3 class="sub-title"><span class="tag">Geometry and construction</span></h3>
+      <ul class="checklist" data-checklist="qa-2" data-qa-group="ai-qa">
+        <li><label><input type="checkbox"><span>Silhouette matches</span></label></li>
+        <li><label><input type="checkbox"><span>Proportions and thickness match</span></label></li>
+        <li><label><input type="checkbox"><span>Component count is correct</span></label></li>
+        <li><label><input type="checkbox"><span>No added, missing or duplicated parts</span></label></li>
+        <li><label><input type="checkbox"><span>Symmetry is correct</span></label></li>
+        <li><label><input type="checkbox"><span>Intentional asymmetry is preserved</span></label></li>
+        <li><label><input type="checkbox"><span>Hinges and moving parts appear functional</span></label></li>
+        <li><label><input type="checkbox"><span>Connectors are correctly positioned</span></label></li>
+      </ul>
+
+      <h3 class="sub-title"><span class="tag">Background and light</span></h3>
+      <ul class="checklist" data-checklist="qa-3" data-qa-group="ai-qa">
+        <li><label><input type="checkbox"><span>Background colour is correct</span></label></li>
+        <li><label><input type="checkbox"><span>Background checked with a colour picker</span></label></li>
+        <li><label><input type="checkbox"><span>No unwanted gradient, texture or horizon</span></label></li>
+        <li><label><input type="checkbox"><span>No edge halo or colour spill</span></label></li>
+        <li><label><input type="checkbox"><span>Lighting direction is coherent</span></label></li>
+        <li><label><input type="checkbox"><span>Reflections describe the product correctly</span></label></li>
+        <li><label><input type="checkbox"><span>Product does not float</span></label></li>
+        <li><label><input type="checkbox"><span>No visible cast shadow in catalogue imagery</span></label></li>
+      </ul>
+
+      <h3 class="sub-title"><span class="tag">Composition and scale</span></h3>
+      <ul class="checklist" data-checklist="qa-4" data-qa-group="ai-qa">
+        <li><label><input type="checkbox"><span>Correct camera angle</span></label></li>
+        <li><label><input type="checkbox"><span>Correct orientation</span></label></li>
+        <li><label><input type="checkbox"><span>Correct crop and framing</span></label></li>
+        <li><label><input type="checkbox"><span>Product scale matches the catalogue</span></label></li>
+        <li><label><input type="checkbox"><span>Important details remain visible</span></label></li>
+        <li><label><input type="checkbox"><span>Product is readable at thumbnail size</span></label></li>
+        <li><label><input type="checkbox"><span>Model scale and placement are credible</span></label></li>
+      </ul>
+
+      <h3 class="sub-title"><span class="tag">Materials</span></h3>
+      <ul class="checklist" data-checklist="qa-5" data-qa-group="ai-qa">
+        <li><label><input type="checkbox"><span>Metal colour is accurate</span></label></li>
+        <li><label><input type="checkbox"><span>Roughness matches the product</span></label></li>
+        <li><label><input type="checkbox"><span>Finish is consistent</span></label></li>
+        <li><label><input type="checkbox"><span>Polished, matte and oxidised areas are correct</span></label></li>
+        <li><label><input type="checkbox"><span>Reflections are plausible</span></label></li>
+        <li><label><input type="checkbox"><span>No plastic or painted appearance</span></label></li>
+        <li><label><input type="checkbox"><span>Gemstones retain transparency and brilliance</span></label></li>
+      </ul>
+
+      <h3 class="sub-title"><span class="tag">Engravings and details</span></h3>
+      <ul class="checklist" data-checklist="qa-6" data-qa-group="ai-qa">
+        <li><label><input type="checkbox"><span>Orientation and position are correct</span></label></li>
+        <li><label><input type="checkbox"><span>No invented markings</span></label></li>
+        <li><label><input type="checkbox"><span>Texture remains visible</span></label></li>
+        <li><label><input type="checkbox"><span>Edge definition is accurate</span></label></li>
+        <li><label><input type="checkbox"><span>Recessed and raised areas remain distinct</span></label></li>
+      </ul>
+
+      <h3 class="sub-title"><span class="tag">Gemstones and settings</span></h3>
+      <ul class="checklist" data-checklist="qa-7" data-qa-group="ai-qa">
+        <li><label><input type="checkbox"><span>Gemstone count verified manually</span></label></li>
+        <li><label><input type="checkbox"><span>Colour and cut match</span></label></li>
+        <li><label><input type="checkbox"><span>Size hierarchy is correct</span></label></li>
+        <li><label><input type="checkbox"><span>Placement and spacing match</span></label></li>
+        <li><label><input type="checkbox"><span>Prongs or bezels are accurate</span></label></li>
+        <li><label><input type="checkbox"><span>No missing or duplicated stones</span></label></li>
+        <li><label><input type="checkbox"><span>No floating stones</span></label></li>
+        <li><label><input type="checkbox"><span>Settings are physically credible</span></label></li>
+      </ul>
+
+      <h3 class="sub-title"><span class="tag">Chains and clasps</span></h3>
+      <ul class="checklist" data-checklist="qa-8" data-qa-group="ai-qa">
+        <li><label><input type="checkbox"><span>Correct chain type</span></label></li>
+        <li><label><input type="checkbox"><span>Correct thickness</span></label></li>
+        <li><label><input type="checkbox"><span>Every visible link is complete</span></label></li>
+        <li><label><input type="checkbox"><span>No fused or broken links</span></label></li>
+        <li><label><input type="checkbox"><span>No impossible intersections</span></label></li>
+        <li><label><input type="checkbox"><span>Jump rings are present and closed</span></label></li>
+        <li><label><input type="checkbox"><span>Clasp matches the original</span></label></li>
+        <li><label><input type="checkbox"><span>Connections respond naturally to gravity</span></label></li>
+      </ul>
+
+      <h3 class="sub-title"><span class="tag">Image quality and artefacts</span></h3>
+      <ul class="checklist" data-checklist="qa-9" data-qa-group="ai-qa">
+        <li><label><input type="checkbox"><span>Critical details are sharp</span></label></li>
+        <li><label><input type="checkbox"><span>No low-resolution areas</span></label></li>
+        <li><label><input type="checkbox"><span>No melted or duplicated geometry</span></label></li>
+        <li><label><input type="checkbox"><span>No invented details</span></label></li>
+        <li><label><input type="checkbox"><span>No unexplained highlights</span></label></li>
+        <li><label><input type="checkbox"><span>No texture discontinuities</span></label></li>
+        <li><label><input type="checkbox"><span>No anatomy failures</span></label></li>
+        <li><label><input type="checkbox"><span>No artefacts near the frame edge</span></label></li>
+      </ul>
+
+      <h3 class="sub-title"><span class="tag">Delivery and approval</span></h3>
+      <ul class="checklist" data-checklist="qa-10" data-qa-group="ai-qa">
+        <li><label><input type="checkbox"><span>Correct dimensions and aspect ratio</span></label></li>
+        <li><label><input type="checkbox"><span>Correct format and colour profile</span></label></li>
+        <li><label><input type="checkbox"><span>File follows the naming convention</span></label></li>
+        <li><label><input type="checkbox"><span>Master and working files retained</span></label></li>
+        <li><label><input type="checkbox"><span>Prompt and source references recorded</span></label></li>
+        <li><label><input type="checkbox"><span>Final image reviewed, complete set</span></label></li>
+        <li><label><input type="checkbox"><span>Final Creative Director approval received</span></label></li>
+      </ul>
+    </section>
+
+  </main>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+  <button class="lightbox-prev" id="lightboxPrev" aria-label="Previous"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg></button>
+  <button class="lightbox-next" id="lightboxNext" aria-label="Next"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></button>
+  <div class="lightbox-stage" id="lightboxStage"><span class="g-label"></span></div>
+</div>
+
+<div class="cmdk-overlay" id="cmdk">
+  <div class="cmdk-panel">
+    <div class="cmdk-input-row">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="text" id="cmdkInput" placeholder="Search this guide…" autocomplete="off">
+      <kbd>Esc</kbd>
+    </div>
+    <div class="cmdk-results" id="cmdkResults"></div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

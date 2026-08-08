@@ -321,6 +321,49 @@ document.addEventListener('keydown', (e) => {
   }
 });
 
+/* ===== Prompt builder ===== */
+document.querySelectorAll('.prompt-builder').forEach(builder => {
+  const fields = [...builder.querySelectorAll('textarea')];
+  const output = builder.querySelector('.prompt-output pre');
+  function update() {
+    output.textContent = fields.map(f => `${f.dataset.label}: ${f.value.trim()}`).join('\n\n');
+  }
+  fields.forEach(f => f.addEventListener('input', update));
+  update();
+  builder.querySelector('.prompt-copy')?.addEventListener('click', () => {
+    copyText(output.textContent).then(() => showToast('Prompt copied'));
+  });
+  builder.querySelector('.prompt-reset')?.addEventListener('click', () => {
+    fields.forEach(f => { f.value = f.defaultValue; });
+    update();
+  });
+});
+
+/* ===== Master checklist aggregator (multi-group progress, e.g. full QA page) ===== */
+document.querySelectorAll('[data-master]').forEach(masterBar => {
+  const group = masterBar.dataset.master;
+  const boxes = [...document.querySelectorAll(`.checklist[data-qa-group="${group}"] input[type="checkbox"]`)];
+  const fill = masterBar.querySelector('.fill');
+  const label = masterBar.querySelector('.label');
+  function updateMaster() {
+    const checked = boxes.filter(b => b.checked).length;
+    const pct = boxes.length ? Math.round((checked / boxes.length) * 100) : 0;
+    if (fill) fill.style.width = pct + '%';
+    if (label) label.textContent = `${checked}/${boxes.length}`;
+  }
+  boxes.forEach(b => b.addEventListener('change', updateMaster));
+  updateMaster();
+});
+
+/* ===== Reset checklist group ===== */
+document.querySelectorAll('.reset-btn[data-reset]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const prefix = btn.dataset.reset;
+    Object.keys(localStorage).filter(k => k.startsWith(`kraymer-checklist-${prefix}`)).forEach(k => localStorage.removeItem(k));
+    location.reload();
+  });
+});
+
 /* ===== GSAP scroll reveals ===== */
 if (window.gsap && window.ScrollTrigger) {
   gsap.registerPlugin(ScrollTrigger);
