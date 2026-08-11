@@ -52,6 +52,10 @@
         <a href="#fmt-lockups">Lockup mockups</a>
       </div>
       <div class="group">
+        <span class="group-label">Grid + graphic design</span>
+        <a href="#fmt-editorial">Editorial grid</a>
+      </div>
+      <div class="group">
         <span class="group-label">Layout variations</span>
         <a href="#fmt-variants-45">4:5 — feed</a>
         <a href="#fmt-variants-916">9:16 — story/reel</a>
@@ -130,21 +134,21 @@
       <p class="block-dek">Platform UI sits on top of the image. Keep the product and any text out of these zones — the striped bands below are approximate reserved areas, not exact platform specs (they change; check before a major campaign).</p>
       <div class="grid-3">
         <div>
-          <div class="ratio-box" style="aspect-ratio:9/16; max-height:280px;">
+          <div class="ratio-box" style="aspect-ratio:9/16; max-width:170px; margin:0 auto;">
             <div class="safe-zone" style="top:0; height:14%;">Profile / header UI</div>
             <div class="safe-zone" style="bottom:0; height:18%;">Caption / reply bar / CTA sticker</div>
           </div>
           <p class="mock-caption">Story / Reel — 9:16</p>
         </div>
         <div>
-          <div class="ratio-box" style="aspect-ratio:4/5; max-height:280px;">
+          <div class="ratio-box" style="aspect-ratio:4/5; max-width:220px; margin:0 auto;">
             <div class="safe-zone" style="top:0; height:6%;"></div>
             <div class="safe-zone" style="bottom:0; height:6%;"></div>
           </div>
           <p class="mock-caption">Feed — 4:5, ~6% crop-safe margin (crops to 1:1 on profile grid)</p>
         </div>
         <div>
-          <div class="ratio-box" style="aspect-ratio:16/9; max-height:280px;">
+          <div class="ratio-box" style="aspect-ratio:16/9; max-width:320px; margin:0 auto;">
             <div class="safe-zone" style="bottom:0; right:0; left:auto; width:22%; height:16%; border-left:1px dashed rgba(200,70,70,.55);">Duration badge</div>
           </div>
           <p class="mock-caption">YouTube thumbnail — 16:9, bottom-right reserved</p>
@@ -158,41 +162,63 @@
       <p class="block-dek">The wordmark stays small and quiet — it should never compete with the product. These are the default positions per format.</p>
       <div class="grid-3">
         <div>
-          <div class="mock-frame" style="aspect-ratio:4/5; background:linear-gradient(155deg, var(--c-accent-1), var(--c-black));">
+          <div class="mock-frame" style="aspect-ratio:4/5; max-width:230px; margin:0 auto; background:linear-gradient(155deg, var(--c-accent-1), var(--c-black));">
             <img class="logo-on-dark" src="assets/logo/kraymer-logo.svg" alt="Logo on feed post" style="position:absolute; bottom:6%; left:6%; width:22%;">
           </div>
           <p class="mock-caption">Feed post (4:5) — bottom-left, small</p>
         </div>
         <div>
-          <div class="mock-frame" style="aspect-ratio:9/16; background:linear-gradient(155deg, #241a33, var(--c-black));">
+          <div class="mock-frame" style="aspect-ratio:9/16; max-width:184px; margin:0 auto; background:linear-gradient(155deg, #241a33, var(--c-black));">
             <div class="safe-zone" style="bottom:0; height:18%;"></div>
             <img class="logo-on-dark" src="assets/logo/kraymer-logo.svg" alt="Logo on story" style="position:absolute; bottom:22%; left:50%; transform:translateX(-50%); width:26%;">
           </div>
           <p class="mock-caption">Story / Reel (9:16) — bottom-center, above the reserved zone</p>
         </div>
         <div>
-          <div class="mock-frame" style="aspect-ratio:16/9; background:var(--c-paper); border:1px solid var(--border);">
+          <div class="mock-frame" style="aspect-ratio:16/9; max-width:320px; margin:0 auto; background:var(--c-paper); border:1px solid var(--border);">
             <img src="assets/logo/kraymer-logo.svg" alt="Logo on website header" style="position:absolute; top:8%; left:5%; width:20%;">
           </div>
           <p class="mock-caption">Website header (16:9) — top-left, standard nav position</p>
         </div>
         <div>
-          <div class="mock-frame" style="aspect-ratio:7/4; background:var(--c-paper); border:1px solid var(--border); display:flex; align-items:center; justify-content:center;">
+          <div class="mock-frame" style="aspect-ratio:7/4; max-width:280px; margin:0 auto; background:var(--c-paper); border:1px solid var(--border); display:flex; align-items:center; justify-content:center;">
             <img src="assets/logo/kraymer-logo.svg" alt="Logo centered on business card" style="width:46%;">
           </div>
-          <p class="mock-caption">Business card — centered, generous clear space</p>
+          <p class="mock-caption">Business card (7:4) — centered, generous clear space</p>
         </div>
         <div>
-          <div class="mock-frame" style="aspect-ratio:1/1; background:var(--c-paper); border:1px solid var(--border); display:flex; align-items:center; justify-content:center;">
+          <div class="mock-frame" style="aspect-ratio:1/1; max-width:230px; margin:0 auto; background:var(--c-paper); border:1px solid var(--border); display:flex; align-items:center; justify-content:center;">
             <img src="assets/logo/kraymer-logo.svg" alt="Logo on product tag" style="width:60%;">
           </div>
-          <p class="mock-caption">Product tag — centered, single element on the card</p>
+          <p class="mock-caption">Product tag (1:1) — centered, single element on the card</p>
         </div>
         <div>
-          <div class="mock-frame" style="aspect-ratio:1/1; background:linear-gradient(155deg, #1a2e2e, var(--c-black));">
+          <div class="mock-frame" style="aspect-ratio:1/1; max-width:230px; margin:0 auto; background:linear-gradient(155deg, #1a2e2e, var(--c-black));">
             <img class="logo-on-dark" src="assets/logo/kraymer-logo.svg" alt="Logo on square post" style="position:absolute; top:6%; right:6%; width:20%;">
           </div>
           <p class="mock-caption">Square post (1:1) — top-right, out of the product's way</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="fmt-editorial">
+      <div class="eyebrow"><span class="tag">Grid + graphic design</span></div>
+      <h2 class="block-title">Editorial grid, in practice</h2>
+      <p class="block-dek">The same 12-column desktop grid from <a href="index.html#grid" style="text-decoration:underline;">Grid &amp; Layout</a>, carrying a real headline. Nantes for the statement, Bricolage Grotesque for the support — never the reverse.</p>
+      <div class="card" style="padding:44px;">
+        <div style="display:grid; grid-template-columns:repeat(12,1fr); gap:24px; align-items:end;">
+          <h3 style="grid-column:1 / 9; font-family:var(--font-display); font-weight:300; font-style:italic; font-size:clamp(26px,4vw,42px); line-height:1.1; margin:0;">The world comes first. The product proves it.</h3>
+          <p style="grid-column:9 / 13; font-size:13px; color:var(--text-muted); margin:0;">Every Collection World defines the mood before a single asset is produced — the grid just gives it somewhere disciplined to live.</p>
+        </div>
+      </div>
+      <div class="card" style="padding:44px; margin-top:16px;">
+        <div style="display:grid; grid-template-columns:repeat(12,1fr); gap:24px;">
+          <div style="grid-column:1/5; aspect-ratio:4/5; border-radius:8px; background:linear-gradient(160deg, #331a1c, var(--c-black));"></div>
+          <div style="grid-column:6/13; display:flex; flex-direction:column; justify-content:center; gap:10px;">
+            <span class="tag">KNY — World 02</span>
+            <h3 style="font-family:var(--font-display); font-style:italic; font-weight:300; font-size:clamp(24px,3.4vw,36px); margin:0;">Carried before. Carried again.</h3>
+            <p style="font-size:13.5px; color:var(--text-muted); max-width:420px; margin:0;">Image occupies five of twelve columns — comfortably past the two-thirds visual-weight rule from Hierarchy.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -203,24 +229,24 @@
       <p class="block-dek">Three starting compositions for the default feed format. Pick based on how much the moment needs to say.</p>
       <div class="grid-3">
         <div>
-          <div class="mock-frame" style="aspect-ratio:4/5;">
+          <div class="mock-frame" style="aspect-ratio:4/5; max-width:260px; margin:0 auto;">
             <div class="m-img" style="top:8%; left:8%; right:8%; bottom:20%; background:linear-gradient(160deg, var(--c-accent-1), var(--c-black));"></div>
-            <div class="m-text" style="bottom:8%; left:8%; width:40%; height:6%;"></div>
+            <p class="m-headline" style="bottom:5%; left:8%; right:8%; font-size:15px; color:var(--text);">Cast in silver.</p>
           </div>
           <p class="mock-caption">Product centered, framed, caption below</p>
         </div>
         <div>
-          <div class="mock-frame" style="aspect-ratio:4/5;">
+          <div class="mock-frame" style="aspect-ratio:4/5; max-width:260px; margin:0 auto;">
             <div class="m-img" style="top:0; left:0; width:55%; bottom:0; background:linear-gradient(160deg, var(--c-accent-2), var(--c-black));"></div>
-            <div class="m-text" style="top:42%; left:62%; width:30%; height:7%;"></div>
-            <div class="m-text" style="top:54%; left:62%; width:22%; height:5%;"></div>
+            <p class="m-headline" style="top:40%; left:60%; right:6%; font-size:21px; color:var(--text);">New Season</p>
+            <div class="m-tag" style="top:58%; left:60%; color:var(--text-muted);">Shop the collection</div>
           </div>
           <p class="mock-caption">Product left, headline right</p>
         </div>
         <div>
-          <div class="mock-frame" style="aspect-ratio:4/5;">
-            <div class="m-img" style="top:0; left:0; right:0; bottom:0; background:linear-gradient(160deg, var(--c-accent-3), var(--c-black));"></div>
-            <div class="m-text" style="bottom:6%; left:6%; width:55%; height:9%;"></div>
+          <div class="mock-frame" style="aspect-ratio:4/5; max-width:260px; margin:0 auto;">
+            <div class="m-img" style="top:0; left:0; right:0; bottom:0; background:linear-gradient(160deg, #241a33, var(--c-black));"></div>
+            <p class="m-headline" style="bottom:7%; left:6%; right:20%; font-size:16px; color:#fff; font-style:normal;">The Moonlit Court</p>
           </div>
           <p class="mock-caption">Full-bleed image, caption bar overlay</p>
         </div>
@@ -233,18 +259,20 @@
       <p class="block-dek">Vertical formats need the message resolved before the thumb moves. Two dependable starting points.</p>
       <div class="grid-2">
         <div>
-          <div class="mock-frame" style="aspect-ratio:9/16; max-height:420px;">
-            <div class="m-img" style="top:0; left:0; right:0; bottom:22%; background:linear-gradient(160deg, var(--c-accent-1), var(--c-black));"></div>
+          <div class="mock-frame" style="aspect-ratio:9/16; max-width:220px; margin:0 auto;">
+            <div class="m-img" style="top:0; left:0; right:0; bottom:22%; background:linear-gradient(160deg, #241a33, var(--c-black));"></div>
+            <div class="m-tag" style="top:6%; left:8%; color:rgba(255,255,255,.65);">JJK — World 01</div>
+            <p class="m-headline" style="bottom:24%; left:8%; right:8%; font-size:19px; color:#fff;">Some things are safer sealed.</p>
             <div class="m-text" style="bottom:9%; left:10%; width:50%; height:5%;"></div>
             <div class="safe-zone" style="bottom:0; height:16%;"></div>
           </div>
-          <p class="mock-caption">Vertical hero image, CTA above the reserved zone</p>
+          <p class="mock-caption">Vertical hero image, headline low, CTA above the reserved zone</p>
         </div>
         <div>
-          <div class="mock-frame" style="aspect-ratio:9/16; max-height:420px;">
-            <div class="m-img" style="top:0; left:0; right:0; height:52%; background:linear-gradient(160deg, var(--c-accent-2), var(--c-black));"></div>
-            <div class="m-text" style="top:58%; left:10%; width:45%; height:6%;"></div>
-            <div class="m-text" style="top:68%; left:10%; width:30%; height:4%;"></div>
+          <div class="mock-frame" style="aspect-ratio:9/16; max-width:220px; margin:0 auto;">
+            <div class="m-img" style="top:0; left:0; right:0; height:52%; background:linear-gradient(160deg, #331a1c, var(--c-black));"></div>
+            <p class="m-headline" style="top:56%; left:10%; right:10%; font-size:18px; color:var(--text);">Carried before. Carried again.</p>
+            <div class="m-tag" style="top:72%; left:10%; color:var(--text-muted);">KNY — World 02</div>
           </div>
           <p class="mock-caption">Split screen — image top, message below</p>
         </div>
@@ -257,15 +285,15 @@
       <p class="block-dek">Used sparingly per the brand rules — mainly grid tiles and legacy placements.</p>
       <div class="grid-2">
         <div>
-          <div class="mock-frame" style="aspect-ratio:1/1;">
-            <div class="m-img" style="top:0; left:0; right:0; bottom:0; background:linear-gradient(160deg, var(--c-accent-3), var(--c-black));"></div>
+          <div class="mock-frame" style="aspect-ratio:1/1; max-width:280px; margin:0 auto;">
+            <div class="m-img" style="top:0; left:0; right:0; bottom:0; background:linear-gradient(160deg, #1a2e2e, var(--c-black));"></div>
           </div>
           <p class="mock-caption">Grid tile — full-bleed, no text, part of a 3-wide set</p>
         </div>
         <div>
-          <div class="mock-frame" style="aspect-ratio:1/1;">
+          <div class="mock-frame" style="aspect-ratio:1/1; max-width:280px; margin:0 auto;">
             <div class="m-img" style="top:14%; left:14%; right:14%; bottom:26%; background:linear-gradient(160deg, var(--c-accent-1), var(--c-black));"></div>
-            <div class="m-text" style="bottom:10%; left:14%; width:40%; height:6%;"></div>
+            <p class="m-headline" style="bottom:8%; left:14%; right:14%; font-size:15px; color:var(--text);">One element. No costume.</p>
           </div>
           <p class="mock-caption">Centered product, inset with breathing room, caption below</p>
         </div>
