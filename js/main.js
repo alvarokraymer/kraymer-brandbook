@@ -286,7 +286,7 @@ function renderResults(query) {
   cmdkResults.innerHTML = '';
   activeResultIndex = 0;
   if (!filtered.length) {
-    cmdkResults.innerHTML = '<div class="cmdk-empty">No results — try another term.</div>';
+    cmdkResults.innerHTML = '<div class="cmdk-empty">No results, try another term.</div>';
     return;
   }
   filtered.slice(0, 40).forEach((item, i) => {
